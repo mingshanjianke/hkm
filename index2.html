@@ -1,0 +1,116 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>任可生日快乐</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        @font-face {
+            font-family: digit;
+            src: url('digital-7_mono.ttf') format("truetype");
+        } 
+<audio src="/music1.mp3" autoplay="autoplay">
+    </style>
+    <link href="style/default.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="style/jquery.js"></script>
+    <script type="text/javascript" src="style/garden.js"></script>
+    <script type="text/javascript" src="style/functions.js"></script>
+</head>
+
+<body>
+    <div id="mainDiv">
+        <div id="content">
+            <div id="code">
+                <p><span class="comments">/**</span><br />
+                  <span class="space"/><span class="comments">*任可生日快乐呀！</span><br />
+                 
+                  <span class="space"/><span class="comments">*时间真的好快啊，想到</span><br />
+                  <span class="space"/><span class="comments">*过去的日子里，总有些孤独，如烟，散在空气里，</span><br />
+                  <span class="space"/><span class="comments">*丝丝缕缕渗入心，让人无力去挣扎。总有些触心动情的故事，能让我们的内心久久不能平静/</span><br />
+                  <span class="comments">//那句话，那个字，那个人，在心里。</span><br />
+                <br />
+                <span class="comments">// 往事如风，吹起柳絮漫天。斟一杯清酒，一饮而尽。吟一首缱绻的宋词，饮尽风花雪月的心碎。</span><br />
+                </p>
+                <p><span class="comments">// 流年里，爱恨痴怨终成荼蘼。自此，迢迢年华中，触不到三寸天堂。锦瑟岁月里，也无法乞及暖阳。</span><br />
+                </p>
+                <p><span class="comments">// 我很想找一个阳光明媚的早晨</span><br />
+                <br />
+                <span class="comments">// 站在泛海跑道上，举起双手用食指和拇指搭成一个相框，一路走来的美景和暖洋洋的阳光相继闪现</span><br />
+                </p>
+                <p><span class="comments">//逐渐交汇成一片泛黄的版画，把最甜美的瞬间寄给你，虽然早起总是那么不切实际</span><br />
+                  <br />
+                <span class="comments">// 但人世间最珍贵的，莫过于真诚的感情，深切的怀念，像幽香的小花，开在深谷。</span></p>
+                <p><span class="comments">// 一年后毕业的我们，有些人失望了，有些人失恋了，有些人失踪了。有些人发财，有些人发福，有些人发喜帖。</span></p>
+                <p><span class="comments">// 这些事，还会陆续发生，默契的生活轨迹将划下休止，开始截然不同的人生。不奢他日再次聚首，但求不忘各自最初的容颜，毕竟，我们都曾闯入彼此的生命 </span><br />
+                  <br />
+                <span class="comments">//在无尽的人海里，我只想淡淡的对你说：生日快乐</span><br />
+                </p>
+
+            </div>
+            <div id="loveHeart">
+                <canvas id="garden"></canvas>
+                <div id="words">
+                    <div id="messages">
+<center>
+happy birthday!
+<center>生日快乐
+                        <div id="elapseClock" style="display:none"></div>
+                        <center><a href='index3.html' id="accept">神奇      传送门</a>
+                    </div>
+                        <center><div id="loveu">
+                        你要快快乐乐，直到永永远远。<br/>
+                        <div class="signature">- </div>
+                    </div>
+				     </div>
+				</div>
+			</div>
+</div>
+	<div class="bg1">	
+		<div class="main">
+			<footer style="line-height:20px">
+                <div id="copyright">
+                     <a href='' target="_blank"></a> 
+                     
+                </object>
+                </div>
+		</div>
+	</div>
+</div>
+<body bgproperties="fixed" background="2499.jpg"tppabs="http://www.5211314.22c.pw/2499.jpg" >
+
+
+    <script type="text/javascript">
+        var offsetX = $("#loveHeart").width() / 2;
+        var offsetY = $("#loveHeart").height() / 2 - 55;
+        
+        if (!document.createElement('canvas').getContext) {
+            var msg = document.createElement("div");
+            msg.id = "errorMsg";
+            msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+            document.body.appendChild(msg);
+            $("#code").css("display", "none")
+            $("#copyright").css("position", "absolute");
+            $("#copyright").css("bottom", "10px");
+            document.execCommand("stop");
+        } else {
+            setTimeout(function () {
+                adjustWordsPosition();
+                startHeartAnimation();
+            }, 10000);
+            
+            $("#accept").click(function(){
+                $(this).hide();
+                $("#elapseClock").show();
+                var together = new Date();
+                timeElapse(together);
+                setInterval(function () {
+                    timeElapse(together);
+                }, 500);
+            })
+            adjustCodePosition();
+            $("#code").typewriter();
+        }
+    </script>
+</body>
+    <audio id="bgmMusic" src="a.mp3" autoplay="autoplay" loop="loop" preload="auto" type="audio/mp3"></audio>
+    
+</html>
